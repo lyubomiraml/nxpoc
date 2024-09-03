@@ -1,0 +1,9 @@
+{
+  "name": "nxpoc-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/nxpoc-e2e/src",
+  "implicitDependencies": ["nxpoc"],
+  "// targets": "to see all targets run: nx show project nxpoc-e2e --web",
+  "targets": {}
+}
