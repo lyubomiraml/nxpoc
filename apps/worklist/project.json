@@ -1,28 +1,28 @@
 {
-  "name": "nxpoc",
+  "name": "worklist",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/nxpoc/src",
+  "sourceRoot": "apps/worklist/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/nxpoc",
-        "index": "apps/nxpoc/src/index.html",
-        "main": "apps/nxpoc/src/main.ts",
+        "outputPath": "dist/apps/worklist",
+        "index": "apps/worklist/src/index.html",
+        "main": "apps/worklist/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/nxpoc/tsconfig.app.json",
+        "tsConfig": "apps/worklist/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/nxpoc/public"
+            "input": "apps/worklist/public"
           }
         ],
-        "styles": ["apps/nxpoc/src/styles.scss"],
+        "styles": ["apps/worklist/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -56,10 +56,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "nxpoc:build:production"
+          "buildTarget": "worklist:build:production"
         },
         "development": {
-          "buildTarget": "nxpoc:build:development"
+          "buildTarget": "worklist:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -67,7 +67,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "nxpoc:build"
+        "buildTarget": "worklist:build"
       }
     },
     "lint": {
@@ -77,13 +77,13 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/nxpoc/jest.config.ts"
+        "jestConfig": "apps/worklist/jest.config.ts"
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "nxpoc:build",
+        "buildTarget": "worklist:build",
         "port": 4200,
         "spa": true
       }

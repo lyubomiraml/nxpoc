@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'nxpoc',
+  displayName: 'dynamic-forms',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/nxpoc',
+  coverageDirectory: '../../coverage/apps/dynamic-forms',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
