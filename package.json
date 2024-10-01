@@ -5,8 +5,9 @@
   "scripts": {
     "serve-df": "npx nx serve dynamic-forms",
     "serve-wl": "npx nx serve worklist",
-    "list-generators" : "npx nx list @nx/angular"
-
+    "list-generators" : "npx nx list @nx/angular",
+    "show-generators" : "npx nx list @nx/angular --generators",
+    "show-graph" : "npx nx graph"
   },
   "private": true,
   "dependencies": {
